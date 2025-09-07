@@ -12,7 +12,7 @@ source:
 build:
   skip: True  # [win]
   skip: True  # [py<311]
-  number: 0
+  number: 1
 
 requirements:
   build:
