@@ -1,5 +1,5 @@
 {% set name = "forte2" %}
-{% set version = "0.2.2" %}
+{% set version = "v2026.5.1-alpha" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/evangelistalab/forte2/archive/v{{ version }}.tar.gz
-  sha256: 5b8a88b0093dd498fd7e6ffed74e385df5a4f74cc909a18b7b08ac302089aa8f
+  sha256: 47f1c39cfbfa50f219ce0bde90feb28d86f5a8df94e994398359d0213337720c
 
 build:
   skip: true  # [win]
   skip: true  # [py<311]
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - cmake =3.26
     - scikit-build-core >=0.10
     - openblas
-    - eigen
+    - eigen =3.4.0
     - libboost-python-devel
     - libint
   run:
