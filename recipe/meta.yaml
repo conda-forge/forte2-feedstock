@@ -1,12 +1,12 @@
 {% set name = "forte2" %}
-{% set version = "v2026.5.1-alpha" %}
+{% set version = "2026.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}.tar.gz
+  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz
   sha256: 47f1c39cfbfa50f219ce0bde90feb28d86f5a8df94e994398359d0213337720c
 
 build:
