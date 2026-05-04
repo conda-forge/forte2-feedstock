@@ -1,18 +1,18 @@
 {% set name = "forte2" %}
-{% set version = "0.2.2" %}
+{% set version = "2026.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}.tar.gz
-  sha256: 5b8a88b0093dd498fd7e6ffed74e385df5a4f74cc909a18b7b08ac302089aa8f
+  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz
+  sha256: c0909ea125ea505ed80bcd1b9d728f634014850d4e7e6f4ae9d06ee6cf56a56e
 
 build:
   skip: true  # [win]
   skip: true  # [py<311]
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -30,8 +30,10 @@ requirements:
     - nanobind >=1.3.2
     - cmake =3.26
     - scikit-build-core >=0.10
+    - libblas * *openblas
+    - liblapack * *openblas
     - openblas
-    - eigen
+    - eigen =3.4.0
     - libboost-python-devel
     - libint
   run:
@@ -41,6 +43,9 @@ requirements:
     - regex
     - basis_set_exchange
     - libint
+    - libblas * *openblas
+    - liblapack * *openblas
+    - openblas
     - libopenblas
     - pytest
     - scikit-build-core >=0.10
