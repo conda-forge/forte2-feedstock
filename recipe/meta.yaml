@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz
-  sha256: dac0e00c5d2fc53bf9fc52506da4f65063762fc893b906fd9bc72242a0914754
+  sha256: c0909ea125ea505ed80bcd1b9d728f634014850d4e7e6f4ae9d06ee6cf56a56e
 
 build:
   skip: true  # [win]
