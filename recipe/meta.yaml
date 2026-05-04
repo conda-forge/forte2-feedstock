@@ -46,6 +46,7 @@ requirements:
     - libblas * *openblas
     - liblapack * *openblas
     - openblas
+    - libopenblas
     - pytest
     - scikit-build-core >=0.10
 
