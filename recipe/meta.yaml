@@ -1,5 +1,5 @@
 {% set name = "forte2" %}
-{% set version = "2026.5.4" %}
+{% set version = "2026.5.1" %}
 
 package:
   name: {{ name|lower }}
