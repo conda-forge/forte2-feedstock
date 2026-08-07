@@ -1,13 +1,13 @@
 {% set name = "forte2" %}
-{% set version = "2026.6.4" %}
+{% set version = "2026.8.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz
-  sha256: 5cade69f5a242ec1217a221e8de69cbf50741e9dc9f838b00f2f7246ed0e9e2f
+  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz  # FIXME: dummy placeholder, confirm actual tag once draft release is published
+  sha256: 0000000000000000000000000000000000000000000000000000000000000  # FIXME: dummy placeholder, update once release tarball is published
 
 build:
   skip: true  # [win]
