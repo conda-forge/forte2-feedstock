@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz  # FIXME: dummy placeholder, confirm actual tag once draft release is published
-  sha256: 0000000000000000000000000000000000000000000000000000000000000  # FIXME: dummy placeholder, update once release tarball is published
+  url: https://github.com/evangelistalab/forte2/archive/v{{ version }}-alpha.tar.gz
+  sha256: 3aa63c52cfa5cb3fca8caaef787afd3aa478e47f20c6062c11d5144c35688342
 
 build:
   skip: true  # [win]
